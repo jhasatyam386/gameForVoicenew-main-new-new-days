@@ -6,9 +6,11 @@
 //
 
 import UIKit
-
+import AVFoundation
 class ViewControllerForHome: UIViewController {
-
+ 
+    
+    let a = AVSpeechSynthesizer()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +19,10 @@ class ViewControllerForHome: UIViewController {
     
 
     @IBAction func playButtonAction(_ sender: Any) {
-        let navigaet = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        var mySound = AVSpeechUtterance(string: "hello let 's play games")
+        a.speak(mySound)
+        mySound.rate = 0.3
+        let navigaet = storyboard?.instantiateViewController(withIdentifier: "ViewController2") as!ViewController2
         navigationController?.pushViewController(navigaet, animated: true)
     }
     

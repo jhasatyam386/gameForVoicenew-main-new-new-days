@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,95 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-removebg-preview (28)" translatesAutoresizingMaskIntoConstraints="NO" id="X0s-mC-dKU">
+                                <rect key="frame" x="110" y="290" width="172" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="51M-sl-gPf"/>
+                                    <constraint firstAttribute="height" constant="137" id="Mgl-bT-rGh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-removebg-preview (26)" translatesAutoresizingMaskIntoConstraints="NO" id="DoJ-zL-vPS">
+                                <rect key="frame" x="39" y="77" width="184" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="Tkr-01-FDc"/>
+                                    <constraint firstAttribute="height" constant="189" id="ixj-Fp-xn2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="UGp-Rl-sGx">
+                                <rect key="frame" x="168" y="-31" width="292" height="651"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="651" id="F7m-BM-gSP"/>
+                                    <constraint firstAttribute="width" constant="292" id="s7F-vx-0Ot"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Alphabet " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb2-m9-gsF">
+                                <rect key="frame" x="0.0" y="620" width="384" height="71.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.026718752458691597" blue="0.0031666669528931379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numbers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hg-6c-gzE">
+                                <rect key="frame" x="138" y="662" width="291" height="52.666666666666629"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <color key="textColor" red="0.99661844968795776" green="0.95328432321548462" blue="0.0063333339057862759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDh-3l-HVq">
+                                <rect key="frame" x="146" y="687" width="92" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.5499148964881897" green="0.99661844968795776" blue="0.0031666669528931379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmg-UC-mVg">
+                                <rect key="frame" x="165" y="777" width="84" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="gHe-gX-jR1"/>
+                                    <constraint firstAttribute="height" constant="22" id="xNb-GK-M9U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.049201481040000002" green="0.1235707179" blue="0.1235707179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kDh-3l-HVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="1pq-49-f1V"/>
+                            <constraint firstItem="UGp-Rl-sGx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-31" id="5i0-jZ-sX2"/>
+                            <constraint firstItem="Nmg-UC-mVg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="6rd-lE-R6z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X0s-mC-dKU" secondAttribute="trailing" constant="111" id="74K-tC-SGU"/>
+                            <constraint firstItem="Tb2-m9-gsF" firstAttribute="centerX" secondItem="kDh-3l-HVq" secondAttribute="centerX" id="7mr-Rv-X5u"/>
+                            <constraint firstItem="X0s-mC-dKU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="9D2-m0-xI4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Hg-6c-gzE" secondAttribute="trailing" constant="-52" id="9c8-oH-p9W"/>
+                            <constraint firstItem="UGp-Rl-sGx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="OLJ-jo-10p"/>
+                            <constraint firstItem="Nmg-UC-mVg" firstAttribute="top" secondItem="kDh-3l-HVq" secondAttribute="bottom" constant="42" id="QXv-9O-niv"/>
+                            <constraint firstItem="kDh-3l-HVq" firstAttribute="top" secondItem="UGp-Rl-sGx" secondAttribute="bottom" constant="67" id="Swz-Xu-kQa"/>
+                            <constraint firstItem="Nmg-UC-mVg" firstAttribute="top" secondItem="kDh-3l-HVq" secondAttribute="bottom" constant="42" id="Wbx-Sm-Umc"/>
+                            <constraint firstItem="Nmg-UC-mVg" firstAttribute="top" secondItem="Tb2-m9-gsF" secondAttribute="bottom" constant="85.333333333333371" id="YDq-nk-CVF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nmg-UC-mVg" secondAttribute="bottom" constant="19" id="Z7Y-mH-T3g"/>
+                            <constraint firstItem="Tb2-m9-gsF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bVw-xS-k9b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nmg-UC-mVg" secondAttribute="trailing" constant="144" id="cC8-gy-hhc"/>
+                            <constraint firstItem="9Hg-6c-gzE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="e5D-sg-CbH"/>
+                            <constraint firstItem="DoJ-zL-vPS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="f88-j3-nii"/>
+                            <constraint firstItem="X0s-mC-dKU" firstAttribute="top" secondItem="DoJ-zL-vPS" secondAttribute="bottom" constant="24" id="fUb-yB-N0U"/>
+                            <constraint firstItem="9Hg-6c-gzE" firstAttribute="top" secondItem="UGp-Rl-sGx" secondAttribute="bottom" constant="42" id="fkO-Ex-peE"/>
+                            <constraint firstItem="Nmg-UC-mVg" firstAttribute="top" secondItem="9Hg-6c-gzE" secondAttribute="bottom" constant="62.333333333333371" id="hy2-5A-lnG"/>
+                            <constraint firstItem="DoJ-zL-vPS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="ksm-fi-yhf"/>
+                            <constraint firstAttribute="trailing" secondItem="UGp-Rl-sGx" secondAttribute="trailing" constant="-67" id="xLC-xH-XgA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="35.877862595419849" y="45.774647887323944"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2" width="500" height="499"/>
+        <image name="image-removebg-preview (26)" width="483" height="517"/>
+        <image name="image-removebg-preview (28)" width="500" height="500"/>
+    </resources>
 </document>
