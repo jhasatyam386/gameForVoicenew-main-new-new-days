@@ -21,7 +21,7 @@ class ViewController2: UIViewController {
  
     
     @IBAction func alphabetButton(_ sender: Any) {
-        var mySound = AVSpeechUtterance(string: "Alphabet")
+        var mySound = AVSpeechUtterance(string: "a to z")
         a.speak(mySound)
         mySound.rate = 0.3
         let navigaet = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
@@ -32,6 +32,13 @@ class ViewController2: UIViewController {
         let naviget = storyboard?.instantiateViewController(withIdentifier: "ViewControllerForHome") as! ViewControllerForHome
         navigationController?.popViewController(animated: true)
        
+    }
+    @IBAction func NumberButtonAction(_ sender: Any) {
+        var mySound = AVSpeechUtterance(string: "one to ten")
+        a.speak(mySound)
+        mySound.rate = 0.3
+        let navigaet = storyboard?.instantiateViewController(withIdentifier: "ViewControllerForNumber") as! ViewControllerForNumber
+        navigationController?.pushViewController(navigaet, animated: true)
     }
     
 }

@@ -19,7 +19,7 @@ class ViewControllerForHome: UIViewController {
     
 
     @IBAction func playButtonAction(_ sender: Any) {
-        var mySound = AVSpeechUtterance(string: "hello let 's play games")
+        var mySound = AVSpeechUtterance(string: "hello let's play games")
         a.speak(mySound)
         mySound.rate = 0.3
         let navigaet = storyboard?.instantiateViewController(withIdentifier: "ViewController2") as!ViewController2
